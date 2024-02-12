@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-title:nth-child(1) {
+  overflow: hidden;
+  border-right: 0.15em solid;
+  animation: typing 0.6s steps(40, end) 0s forwards, step-end infinite;
+  max-width: 70px;
+}
+
+.content-title:nth-child(2) {
+  opacity: 0;
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  animation: typing 0.7s steps(40, end) 0.6s forwards, step-end infinite;
+  max-width: 335px;
+}
+
+@keyframes typing {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-title:nth-child(1) {
+    max-width: 45px;
+  }
+
+  .content-title:nth-child(2) {
+    width: 205px;
+  }
+}
