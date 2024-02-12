@@ -5,7 +5,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-2 px-10 py-2">
         <div className="lg:pl-20 flex justify-center">
           <div className="lg:max-w-none flex justify-center sm:px-0 sm:max-w-sm px-4">
-            <img src="../src/assets/About.png" alt="about" />
+            <img src="./img/About.png" alt="about" />
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">

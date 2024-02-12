@@ -10,7 +10,7 @@ export default function Projects() {
         <div className="flex flex-col justify-center items-center border-4 border-solid border-white max-w-[90%] md:max-w-[40%] my-2">
           <div className="group relative overflow-hidden m-4">
             <img
-              src="./src/assets/tic-tac-toe.jpeg"
+              src="./img/tic-tac-toe.jpeg"
               alt="Tic-tac-toe"
               className="rounded-2xl group-hover:blur-[2.4]"
             />
@@ -37,7 +37,7 @@ export default function Projects() {
         <div className="flex flex-col justify-center items-center border-4 border-solid border-white max-w-[90%] md:max-w-[40%]">
           <div className="group relative overflow-hidden m-4">
             <img
-              src="./src/assets/backend-notes-app.png"
+              src="./img/backend-notes-app.png"
               alt="Notes-App"
               className="rounded-2xl group-hover:blur-[2.4]"
             />
