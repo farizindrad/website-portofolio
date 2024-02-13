@@ -5,18 +5,8 @@ export default function Introduction() {
       className="flex flex-wrap justify-around items-center min-h-screen"
     >
       <div className="flex flex-col items-center md:items-start md:w-1/2 md:px-4 pt-20">
-        <h1
-          className="text-3xl md:text-5xl font-bold content-title md:py-2"
-          style={{ textShadow: "3px 3px 3px white" }}
-        >
-          Hi!
-        </h1>
-        <h1
-          className="text-3xl md:text-5xl font-bold content-title md:py-2"
-          style={{ textShadow: "3px 3px 3px white" }}
-        >
-          I'm Fariz Indra
-        </h1>
+        <Greet text="Hi!" />
+        <Greet text="I'm Fariz Indra" />
         <p className="text-md md:text-3xl font-semibold md:py-2">
           Backend Developer
         </p>
@@ -33,5 +23,18 @@ export default function Introduction() {
         <img src="./img/Glow-remove.png" alt="profile" />
       </div>
     </div>
+  );
+}
+
+function Greet({ text }) {
+  return (
+    <>
+      <h1
+        className="text-3xl md:text-5xl font-bold content-title md:py-2"
+        style={{ textShadow: "3px 3px 3px white" }}
+      >
+        {text}
+      </h1>
+    </>
   );
 }

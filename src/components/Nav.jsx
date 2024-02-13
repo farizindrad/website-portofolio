@@ -41,38 +41,10 @@ export default function Nav() {
           }`}
         >
           <ul className="flex md:flex-row text-xl flex-col md:items-center gap-7 ">
-            <li className="font-semibold">
-              <a
-                href="#"
-                className="flex justify-center items-center rounded-full hover:bg-slate-400 hover:text-white block p-2"
-              >
-                Home
-              </a>
-            </li>
-            <li className="font-semibold">
-              <a
-                href="#about"
-                className="flex justify-center items-center rounded-full hover:bg-slate-400 hover:text-white p-2"
-              >
-                About
-              </a>
-            </li>
-            <li className="font-semibold">
-              <a
-                href="#project"
-                className="flex justify-center items-center rounded-full hover:bg-slate-400 hover:text-white p-2"
-              >
-                Project
-              </a>
-            </li>
-            <li className="font-semibold">
-              <a
-                href="#skill"
-                className="flex justify-center items-center rounded-full hover:bg-slate-400 hover:text-white p-2"
-              >
-                Skill
-              </a>
-            </li>
+            <NavList href="#" text="Home" />
+            <NavList href="#about" text="About" />
+            <NavList href="#project" text="Project" />
+            <NavList href="#skill" text="Skill" />
           </ul>
         </div>
         <div className="flex items-center cursor-pointer md:hidden">
@@ -96,3 +68,16 @@ export default function Nav() {
     </header>
   );
 }
+
+const NavList = ({ href, text }) => {
+  return (
+    <li className="font-semibold">
+      <a
+        href={href}
+        className="flex justify-center items-center rounded-full hover:bg-slate-400 hover:text-white p-2"
+      >
+        {text}
+      </a>
+    </li>
+  );
+};
